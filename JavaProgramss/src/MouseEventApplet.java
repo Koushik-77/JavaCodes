@@ -13,7 +13,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mouseClicked(java.awt.event.MouseEvent e) {
+    public void mouseClicked(MouseEvent e) {
         mouseX = e.getX();
         mouseY = e.getY();
         msg = "Mouse Clicked";
@@ -21,7 +21,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mousePressed(java.awt.event.MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
         mouseX = e.getX();
         mouseY = e.getY();
         msg = "Mouse Pressed";
@@ -29,7 +29,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mouseReleased(java.awt.event.MouseEvent e) {
+    public void mouseReleased(MouseEvent e) {
         mouseX = e.getX();
         mouseY = e.getY();
         msg = "Mouse Released";
@@ -37,7 +37,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mouseEntered(java.awt.event.MouseEvent e) {
+    public void mouseEntered(MouseEvent e) {
         mouseX = e.getX();
         mouseY = e.getY();
         msg = "Mouse Entered";
@@ -46,7 +46,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mouseExited(java.awt.event.MouseEvent e) {
+    public void mouseExited(MouseEvent e) {
         mouseX = e.getX();
         mouseY = e.getY();
         msg = "Mouse Exited";
@@ -55,7 +55,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mouseDragged(java.awt.event.MouseEvent e) {
+    public void mouseDragged(MouseEvent e) {
         mouseX = e.getX();
         mouseY = e.getY();
         msg = "Mouse Dragged";
@@ -64,7 +64,7 @@ public class MouseEventApplet extends Applet implements MouseListener, MouseMoti
     }
 
     @Override
-    public void mouseMoved(java.awt.event.MouseEvent e) {
+    public void mouseMoved(MouseEvent e) {
         showStatus("Moving mouse at " + e.getX() + ", " + e.getY());
     }
 
